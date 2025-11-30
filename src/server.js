@@ -38,10 +38,6 @@ app.use(
 
 // Set security HTTP headers
 app.use(helmet());
-// Data sanitization against NoSQL injection attacks
-app.use(mongoSanitize());
-// Data sanitization against XSS attacks
-app.use(xss());
 
 // Rate limiting middleware to limit repeated requests to public APIs and endpoints
 app.use(
