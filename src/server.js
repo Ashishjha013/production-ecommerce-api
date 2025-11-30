@@ -29,12 +29,19 @@ connectDB();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.CLIENT_URL || '*',
+    credentials: true,
+  })
+);
+
+// Set security HTTP headers
 app.use(helmet());
-// Removed mongoSanitize for debugging purposes
-// app.use(mongoSanitize());
-// Removed xss for debugging purposes
-// app.use(xss());
+// Data sanitization against NoSQL injection attacks
+app.use(mongoSanitize());
+// Data sanitization against XSS attacks
+app.use(xss());
 
 // Rate limiting middleware to limit repeated requests to public APIs and endpoints
 app.use(
