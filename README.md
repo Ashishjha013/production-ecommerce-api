@@ -21,6 +21,28 @@
 
 ---
 
+## 📸 Screenshots
+
+## 🔐 Login
+![Login Screenshot](assets/screenshots/1-login.png)
+
+## 📊 Tasks Cached
+![Tasks Cached](assets/screenshots/2-task-list-cached.png)
+
+## 👤 Profile
+![Profile Screenshot](assets/screenshots/3-profile.png)
+
+## 📝 Create Task
+![Create Task Screenshot](assets/screenshots/4-create-task.png)
+
+## 📈 Stats
+![Stats Screenshot](assets/screenshots/5-stats.png)
+
+## 🖼 Avatar Upload
+![Avatar Upload Screenshot](assets/screenshots/6-avatar-upload.png)
+
+---
+
 ## 🌍 Live Deployment
 🔗 **API URL:** https://production-ecommerce-api.onrender.com  
 📁 **GitHub Repo:** https://github.com/Ashishjha013/production-ecommerce-api
