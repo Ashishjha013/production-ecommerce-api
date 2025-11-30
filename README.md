@@ -23,23 +23,23 @@
 
 ## 📸 Screenshots
 
-## 🔐 Login
-![Login Screenshot](assets/screenshots/1-register_user.png)
+### 🔐 Register User
+![Register Screenshot](src/assets/screenshots/1-register_user.png)
 
-## 📊 Tasks Cached
-![Tasks Cached](assets/screenshots/2-login_user.png)
+### 👤 Login User
+![Login Screenshot](src/assets/screenshots/2-login_user.png)
 
-## 👤 Profile
-![Profile Screenshot](assets/screenshots/3-get_products.png)
+### 🛍 Get Products
+![Get Products Screenshot](src/assets/screenshots/3-get_products.png)
 
-## 📝 Create Task
-![Create Task Screenshot](assets/screenshots/4-add_to_cart.png)
+### 🛒 Add to Cart
+![Add to Cart Screenshot](src/assets/screenshots/4-add_to_cart.png)
 
-## 📈 Stats
-![Stats Screenshot](assets/screenshots/5-place_an_order.png)
+### 📦 Place Order
+![Place Order Screenshot](src/assets/screenshots/5-place_an_order.png)
 
-## 🖼 Avatar Upload
-![Avatar Upload Screenshot](assets/screenshots/6-get_my_orders.png)
+### 📑 Get My Orders
+![Get My Orders Screenshot](src/assets/screenshots/6-get_my_orders.png)
 
 ---
 
