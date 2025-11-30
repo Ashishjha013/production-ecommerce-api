@@ -1,6 +1,8 @@
 <div align="center">
+   
 # 🛒 **E‑COMMERCE BACKEND API**
-### Fully production‑ready backend powering shopping, cart, orders & admin features.
+### **Fully production‑ready backend powering shopping, cart, orders & admin features.**
+
 ✨━━━━━━━━━━━━━━━━━━━  **❖**  ━━━━━━━━━━━━━━━━━━━✨
 </div>
 
