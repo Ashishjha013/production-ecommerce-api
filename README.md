@@ -154,10 +154,10 @@
 }
 
 ---
+```
 
 ## 🏗 Architecture Overview
 
-```
 [Client]
    |
  HTTPS
