@@ -24,22 +24,22 @@
 ## 📸 Screenshots
 
 ## 🔐 Login
-![Login Screenshot](assets/screenshots/1-login.png)
+![Login Screenshot](assets/screenshots/1-register_user.png)
 
 ## 📊 Tasks Cached
-![Tasks Cached](assets/screenshots/2-task-list-cached.png)
+![Tasks Cached](assets/screenshots/2-login_user.png)
 
 ## 👤 Profile
-![Profile Screenshot](assets/screenshots/3-profile.png)
+![Profile Screenshot](assets/screenshots/3-get_products.png)
 
 ## 📝 Create Task
-![Create Task Screenshot](assets/screenshots/4-create-task.png)
+![Create Task Screenshot](assets/screenshots/4-add_to_cart.png)
 
 ## 📈 Stats
-![Stats Screenshot](assets/screenshots/5-stats.png)
+![Stats Screenshot](assets/screenshots/5-place_an_order.png)
 
 ## 🖼 Avatar Upload
-![Avatar Upload Screenshot](assets/screenshots/6-avatar-upload.png)
+![Avatar Upload Screenshot](assets/screenshots/6-get_my_orders.png)
 
 ---
 
