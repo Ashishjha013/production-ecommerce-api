@@ -1,16 +1,10 @@
 const Redis = require('ioredis');
 
-const redisUrl = process.env.REDIS_URL || '';
-
-const redisOptions = {};
-
-if (redisUrl.startsWith('rediss://')) {
-  redisOptions.tls = {
+const redis = new Redis(process.env.REDIS_URL, {
+  tls: {
     rejectUnauthorized: false,
-  };
-}
-
-const redis = redisUrl ? new Redis(redisUrl, redisOptions) : new Redis(redisOptions);
+  },
+});
 
 // Logs connection status to Redis
 // server when connected successfully

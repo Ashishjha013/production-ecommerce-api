@@ -130,34 +130,33 @@ exports.loginUser = asyncHandler(async (req, res) => {
 exports.logoutUser = asyncHandler(async (req, res) => {
   const tokenFromCookie = req.cookies.refreshToken;
 
+  // Clear the refresh token cookie
   if (tokenFromCookie) {
-    try {
-      const decoded = jwt.verify(
-        tokenFromCookie,
-        process.env.JWT_REFRESH_SECRET || 'refreshsecretkey'
-      );
+    // no verify; we just want id if present
+    const decoded = jwt.decode(tokenFromCookie);
 
-      if (decoded?.id) {
-        const user = await User.findById(decoded.id);
-        if (user?.refreshTokens?.length) {
-          user.refreshTokens = user.refreshTokens.filter((t) => t !== tokenFromCookie);
-          await user.save();
-        }
+    // no verify; we just want id if present
+    // Remove the refresh token from user's refreshTokens array
+    if (decoded && decoded.id) {
+      const user = await User.findById(decoded.id);
+      if (user && user.refreshTokens) {
+        user.refreshTokens = user.refreshTokens.filter((t) => t !== tokenFromCookie);
+        await user.save();
       }
-    } catch (err) {
-      // Silent catch – we still clear the cookie and respond
     }
+
+    // Clear cookie
+    res.clearCookie('refreshToken', {
+      httpOnly: true,
+      secure: false, // Set to true in production with HTTPS
+      sameSite: 'lax',
+    });
+
+    // Respond with success message
+    res.json({
+      message: 'Logged out successfully',
+    });
   }
-
-  res.clearCookie('refreshToken', {
-    httpOnly: true,
-    secure: false, // Set to true in production with HTTPS
-    sameSite: 'lax',
-  });
-
-  res.json({
-    message: 'Logged out successfully',
-  });
 });
 
 // Get User Profile
@@ -165,7 +164,8 @@ exports.getProfile = asyncHandler(async (req, res) => {
   res.json({
     id: req.user._id,
     name: req.user.name,
-    email: req.user.email,
+    email: req.user,
+    email,
     role: req.user.role,
   });
 });
