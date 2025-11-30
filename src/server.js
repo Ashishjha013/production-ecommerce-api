@@ -6,7 +6,6 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
-const mongoSanitize = require('express-mongo-sanitize');
 
 const connectDB = require('./config/db');
 require('./utils/redisClient');
@@ -34,8 +33,12 @@ app.use(
 );
 
 // Security middlewares (fixed)
-app.use(helmet()); // Just default - express 5 compatibility
-app.use(mongoSanitize());
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+    crossOriginEmbedderPolicy: false,
+  })
+); // Just default - express 5 compatibility
 
 // Rate limit
 app.use(
