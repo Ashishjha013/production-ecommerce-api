@@ -35,6 +35,12 @@
 
 ---
 
+## 🌍 **Live Deployment**
+🔗 **API URL:** https://production-ecommerce-api.onrender.com  
+📁 **GitHub Repo:** https://github.com/Ashishjha013/production-ecommerce-api
+
+---
+
 ## 🎯 **Tech Highlights (Why This Backend is Production-Ready)**
 
 - **Cloudinary `upload_stream`** for efficient image handling  
@@ -67,12 +73,6 @@
 
 ### 📑 Get My Orders
 ![Get My Orders Screenshot](src/assets/screenshots/6-get_my_orders.png)
-
----
-
-## 🌍 **Live Deployment**
-🔗 **API URL:** https://production-ecommerce-api.onrender.com  
-📁 **GitHub Repo:** https://github.com/Ashishjha013/production-ecommerce-api
 
 ---
 
