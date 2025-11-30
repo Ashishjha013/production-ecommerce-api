@@ -32,7 +32,12 @@ app.use(cookieParser());
 app.use(cors({}));
 
 // Set security HTTP headers
-app.use(helmet());
+app.use(
+  helmet({
+    crossOriginOpenerPolicy: false,
+    contentSecurityPolicy: false,
+  })
+);
 
 // Rate limiting middleware to limit repeated requests to public APIs and endpoints
 app.use(
