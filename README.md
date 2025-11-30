@@ -153,10 +153,11 @@
   }
 }
 
----
 ```
+---
 
 ## 🏗 Architecture Overview
+```
 
 [Client]
    |
