@@ -236,5 +236,3 @@ npm start
 ---
 
 *Generated README: E‑Commerce Backend — Designed for real production usage.*
-
-
