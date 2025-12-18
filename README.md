@@ -35,9 +35,15 @@
 
 ---
 
-## 🌍 **Live Deployment**
-🔗 **API URL:** https://production-ecommerce-api.onrender.com  
-📁 **GitHub Repo:** https://github.com/Ashishjha013/production-ecommerce-api
+## 🌍 Live Deployment
+
+🔗 <a href="https://production-ecommerce-api.onrender.com" target="_blank" rel="noopener noreferrer">
+  <b>API URL</b>
+</a>  
+
+📁 <a href="https://github.com/Ashishjha013/production-ecommerce-api" target="_blank" rel="noopener noreferrer">
+  <b>GitHub Repository</b>
+</a>
 
 ---
 
