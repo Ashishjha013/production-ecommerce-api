@@ -234,5 +234,3 @@ npm start
 - Email: ashishjha1304@gmail.com  
 
 ---
-
-*Generated README: E‑Commerce Backend — Designed for real production usage.*
